@@ -3,12 +3,12 @@ package main;
 import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
+@Entity //performs component scan, which processes things like controllers
 public class Person {
     private int id;
     private String name;
 
-    @Id
+    @Id //specifies primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID", nullable = false)
     public int getId() {

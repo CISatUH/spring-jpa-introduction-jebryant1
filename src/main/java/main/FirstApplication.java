@@ -5,24 +5,24 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication //tells the compiler to do stuff, like run from CMD; not needed for FX/Web apps
 public class FirstApplication implements CommandLineRunner {
 
 
-    @Autowired
+    @Autowired //dependency injection
     PersonRepository personRepository;
 
     public static void main(String[] args) {
-        SpringApplication.run(FirstApplication.class,args);
-    }
+        SpringApplication.run(FirstApplication.class,args); //inversion of control (framework calls function)
+    } 
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) throws Exception { //IoC
         Person person = new Person();
-        person.setName("John");
-        personRepository.save(person);
+        person.setName("John"); //sets name
+        personRepository.save(person); //saves class
 
-        Person personFromDb = personRepository.findFirstByName("John");
+        Person personFromDb = personRepository.findFirstByName("John"); //runs query
         System.out.println(personFromDb);
     }
 }
