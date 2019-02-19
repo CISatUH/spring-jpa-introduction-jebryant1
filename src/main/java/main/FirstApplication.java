@@ -11,6 +11,7 @@ public class FirstApplication implements CommandLineRunner {
 
     @Autowired //dependency injection
     PersonRepository personRepository;
+    ManagerRepository managerRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(FirstApplication.class,args); //inversion of control (framework calls function)
@@ -24,5 +25,14 @@ public class FirstApplication implements CommandLineRunner {
 
         Person personFromDb = personRepository.findFirstByName("John"); //runs query
         System.out.println(personFromDb);
+
+
+
+        ManagerEntity manager = new ManagerEntity();
+        manager.setLastName("Bryant");
+        managerRepository.save(manager);
+
+        ManagerEntity managerFromDb = managerRepository.findByLastName("Bryant");
+        System.out.println(managerFromDb);
     }
 }
