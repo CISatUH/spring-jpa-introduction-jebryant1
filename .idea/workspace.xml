@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40801aaa-392f-4848-9fa0-eeda797f8c44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbe5373a-051e-4b34-976e-e50c097bf3d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbe5373a-051e-4b34-976e-e50c097bf3d6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,6 +59,13 @@
         <item name="mydb" type="feb32156:DbDataSourceImpl" />
         <item name="MYDB: database" type="2aa06773:H2ImplModel$Database" />
         <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
+        <item name="MANAGER: table" type="818c1b4a:H2ImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mydb" type="feb32156:DbDataSourceImpl" />
+        <item name="MYDB: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
         <item name="PERSON: table" type="818c1b4a:H2ImplModel$Table" />
       </path>
     </expand>
@@ -69,7 +77,17 @@
     </checked>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V20190219143108__manager_class.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,6 +124,7 @@
         <option value="$PROJECT_DIR$/src/main/java/main/Person.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V20180918123599__create_dog.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V20180918123592__create_cat.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V20190219143108__manager_class.sql" />
       </list>
     </option>
   </component>
@@ -348,6 +367,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -405,8 +426,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +438,7 @@
     <property name="SearchEverywhereHistoryKey" value="persis&#9;ACTION&#9;ActivatePersistenceToolWindow&#10;persista&#9;PSI&#9;JAVA://org.springframework.data.domain.Persistable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550176945464" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550608498651" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
@@ -622,7 +641,8 @@
       <workItem from="1550177429096" duration="314000" />
       <workItem from="1550177782940" duration="1363000" />
       <workItem from="1550189889081" duration="772000" />
-      <workItem from="1550191103869" duration="409000" />
+      <workItem from="1550191103869" duration="685000" />
+      <workItem from="1550608132360" duration="585000" />
     </task>
     <task id="LOCAL-00001" summary="added the dog class">
       <created>1550008324405</created>
@@ -638,16 +658,23 @@
       <option name="project" value="LOCAL" />
       <updated>1550178522972</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added the cat class">
+      <created>1550191540734</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550191540734</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16321000" />
+    <option name="totallyTimeSpent" value="17182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.535109" visible="true" weight="0.1785174" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.535109" visible="true" weight="0.18078668" />
       <window_info id="Structure" order="1" sideWeight="0.47463176" side_tool="true" weight="0.17170954" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -655,7 +682,7 @@
       <window_info id="DB Browser" order="5" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Persistence" order="8" sideWeight="0.46489105" side_tool="true" visible="true" weight="0.1785174" />
+      <window_info active="true" id="Persistence" order="8" sideWeight="0.46489105" side_tool="true" visible="true" weight="0.18078668" />
       <window_info id="Learn" order="9" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -697,7 +724,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added the dog class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the dog class" />
+    <MESSAGE value="added the cat class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the cat class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dd040963-da0c-49fc-843f-dda64b927001/console.sql" />
@@ -736,24 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V20180918123527__create_user_table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V20180918123599__create_dog.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V20180918123592__create_cat.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -785,6 +799,30 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/R__manager_class.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V20180918123527__create_user_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V20180918123592__create_cat.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V20190219143108__manager_class.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
